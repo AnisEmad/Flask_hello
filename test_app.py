@@ -4,4 +4,4 @@ def test_home():
     client = app.test_client()
     res = client.get("/")
     assert res.status_code == 200
-    assert b"Hello" in res.data
+    assert b"hello, my friends" in res.data
